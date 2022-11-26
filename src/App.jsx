@@ -5,7 +5,7 @@ export class App extends Component {
   render() {
   const ady = "Aman"
     return (
-      <div><Welcome name={ady} age='24'/></div>
+      <div><Welcome name={ady} age='4'/></div>
     )
   }
 }
@@ -14,6 +14,6 @@ export default App
 
 
 
-// the ex: 14 (Props - 05)
+// the ex: 15 (Conditional Rendering - 01)
 
-//Extract the "Your age is " message into a new component called Age and render it within the Welcome component. Pass to the Age component the age prop that Welcome is receiving from the App component.
+// Modify the Welcome component so that the Age component is rendered only if the age prop is greater than 18
