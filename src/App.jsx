@@ -1,18 +1,21 @@
 import React from 'react'
 
+
+function hello(name){
+  return <h1>"Hello, {name}"</h1>
+}
+
 function App() {
- 
- const hello = '"Hello, World!".' 
  
   return (
     <div>
-     <h1>{hello}</h1>
+     <h1>{hello("suleyman")}</h1>
     </div>
   );
 }
 
 export default App;
 
-// the ex: 01 (jsx-01)
+// the ex: 02 (jsx-02)
 
-// Create a variable called hello and inizialize it with an h1 tag with the message "Hello, World!".
+// Write a function that receives a name argument and returns a h1 tag with the name variable appended to the "Hello, " string.
