@@ -1,17 +1,27 @@
 import React, { Component } from 'react'
 
-class Welcome extends Component {
+
+ function Welcome({name, age}) {
+   return (
+     <>
+       <p> Welcome, {name}!</p>
+       <Age age={age}/>
+     </>
+   );
+ }
+
+Welcome.defaultProps = {
+  name: "Suleyman",
+};
+
+export class Age extends Component {
   render() {
-    return (
-      <>
-        <p> Welcome, {this.props.name}!</p>
-        <p>"Your age is {this.props.age}."</p>
-      </>
-    );
+    return <p>"Your age is {this.props.age}."</p>;
   }
 }
 
-Welcome.defaultProps = {
-  name: 'Suleyman'
-}
+
 export default Welcome
+
+
+
