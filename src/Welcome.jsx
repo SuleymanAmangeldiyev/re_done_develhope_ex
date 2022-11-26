@@ -6,4 +6,7 @@ class Welcome extends Component {
   }
 }
 
+Welcome.defaultProps = {
+  name: 'Suleyman'
+}
 export default Welcome
