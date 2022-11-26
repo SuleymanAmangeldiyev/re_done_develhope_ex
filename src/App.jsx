@@ -12,6 +12,6 @@ export default App
 
 
 
-// the ex: 07 (Components - 06)
+// the ex: 08 (Components - 07)
 
-// Modify the Hello component so that it shows a p tag below the h1 tag with the message "What a beautiful day!".
+// Extract the "What a beautiful day!" message into a new component called Message and render it within the Hello component.

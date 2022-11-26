@@ -5,6 +5,16 @@ import React, { Component } from 'react'
     return (
       <>
         <h1>"Hello, World!"</h1>
+      <Message />
+      </>
+    );
+  }
+}
+
+class Message extends Component {
+  render() {
+    return (
+      <>
         <p>"What a beautiful day!".</p>
       </>
     );
