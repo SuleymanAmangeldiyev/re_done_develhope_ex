@@ -5,7 +5,7 @@ import React, { Component } from 'react'
    return (
      <>
        <p> Welcome, {name}!</p>
-     {age > 18 && age < 65 && name == "John" && <Age age={age}/>}
+      <Age age={age}/>
      </>
    );
  }
@@ -17,7 +17,11 @@ Welcome.defaultProps = {
 
 function Age({age})  {
  
-    return <p>"Your age is {age}."</p>;
+    return (
+      <p>
+        {age > 18 ? `Your age is ${age}.` : ''} { age < 18 && `You are very young!`}
+      </p>
+    );
   }
 
 
