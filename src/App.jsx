@@ -1,17 +1,20 @@
+import React from "react";
+import Hello from './Hello'
+
+function App() {
+  return (
+    <div>
+      <Hello />
+    </div>
+  );
+}
+
+export default App;
 
 
 
 
 
+// the ex: 05 (Components - 02)
 
-
-
-
-
-
-
-
-
-// the ex: 04 (Components - 01)
-
-// Create a new React application with create-react-app and remove all the code within the src folder.
+// Write a Hello class components that renders the "Hello, World!" message within an h1 tag.
