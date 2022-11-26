@@ -3,7 +3,7 @@ import Welcome from './Welcome'
 export class App extends Component {
   render() {
     return (
-      <div><Welcome /></div>
+      <div><Welcome age='24' /></div>
     )
   }
 }
@@ -12,6 +12,6 @@ export default App
 
 
 
-// the ex: 10 (Props - 02)
+// the ex: 11 (Props - 03)
 
-// What happens if no name prop is passed to the Welcome component? Can you set a default value for the name prop?
+// Modify the Welcome component so that it receives a second prop called age and renders it below the 'welcome' message, within a p tag after the message "Your age is ".
