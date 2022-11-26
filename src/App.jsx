@@ -1,20 +1,17 @@
-import React from "react";
+import React, { Component } from 'react'
 import Hello from './Hello'
-
-function App() {
-  return (
-    <div>
-      <Hello />
-    </div>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <div><Hello /></div>
+    )
+  }
 }
 
-export default App;
+export default App
 
 
 
+// the ex: 05 (Components - 03)
 
-
-// the ex: 05 (Components - 02)
-
-// Write a Hello class components that renders the "Hello, World!" message within an h1 tag.
+// Write a class component called App that renders the Hello component within a div tag.
