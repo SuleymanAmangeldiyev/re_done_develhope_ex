@@ -9,4 +9,5 @@ root.render(
   </React.StrictMode>
 );
 
-
+  
+// the ex: 06 (Components - 04)

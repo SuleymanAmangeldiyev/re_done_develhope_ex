@@ -12,6 +12,6 @@ export default App
 
 
 
-// the ex: 05 (Components - 03)
+// the ex: 06 (Components - 04)
 
-// Write a class component called App that renders the Hello component within a div tag.
+// Create a new index.js file within the src folder and render the App component using the ReactDOM.render method.
