@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Counter from './Counter'
+import ClickCounter from './ClickCounter'
 export class App extends Component {
   
   render() {
     return (
       <div>
-        <Counter initial='1' increment='2000'/>
+        <ClickCounter />
       </div> 
     )
   }
@@ -15,6 +15,6 @@ export default App
 
 
 
-// the ex: 23  (Component Lifecycle - 01)
+// the ex: 24  (Event - 01)
 
-// Modify the Counter component so that the interval is initialized within the componentDidMount life cycle method instead of the constructor. Is the constructor still required?
+// Create a ClickCounter class component that increments a counter every time a user clicks on a button. Render both the current value of the counter and the button within the ClickCounter component.
