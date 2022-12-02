@@ -5,6 +5,7 @@ export class Login extends Component {
     username: "",
     password: "",
     remember: false,
+    login: false
   };
 
   control = (e) => {
@@ -16,7 +17,12 @@ export class Login extends Component {
       [name]: type === "checkbox" ? checked : value,
     });
   };
-
+  labelIn = () =>{
+    this.setState({
+      login: true
+    })
+    alert("You loged in! ")
+  }
   render() {
     return (
       <div>
@@ -45,6 +51,13 @@ export class Login extends Component {
           id="remember"
           value={this.state.remember}
         />
+        <button
+          type="button"
+          disabled={!this.state.username || !this.state.password}
+          onClick={this.labelIn}
+        >
+          Login
+        </button>
       </div>
     );
   }
