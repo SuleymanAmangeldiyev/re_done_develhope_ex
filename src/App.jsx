@@ -12,6 +12,5 @@ export class App extends Component {
 
 export default App;
 
-// the ex: 29  (Form - 04)
+// the ex: 28  (Form - 03)
 
-//Add a "reset" button to the Login component that clears the content of all three inputs when clicked.

@@ -5,7 +5,7 @@ export class Login extends Component {
     username: "",
     password: "",
     remember: false,
-    login: false
+    login: false,
   };
 
   control = (e) => {
@@ -17,21 +17,13 @@ export class Login extends Component {
       [name]: type === "checkbox" ? checked : value,
     });
   };
-  labelIn = () =>{
+  labelIn = () => {
     this.setState({
-      login: true
-    })
-    alert("You loged in! ")
-  }
-
-  restart = () => {
-    this.setState({
-      username: "",
-      password: "",
-      remember: false,
-      login: false,
+      login: true,
     });
-  }
+    alert("You loged in! ");
+  };
+
   render() {
     return (
       <div>
@@ -58,16 +50,16 @@ export class Login extends Component {
           name="remember"
           type="checkbox"
           id="remember"
-          checked={this.state.remember} onClick={this.control}
+          checked={this.state.remember}
+          onClick={this.control}
         />
         <button
           type="button"
           disabled={!this.state.username || !this.state.password}
-          onClick={this.labelIn} 
+          onClick={this.labelIn}
         >
           Login
         </button>
-        <button type="button" onClick={this.restart}>Reset</button>
       </div>
     );
   }
