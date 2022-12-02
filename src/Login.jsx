@@ -23,6 +23,15 @@ export class Login extends Component {
     })
     alert("You loged in! ")
   }
+
+  restart = () => {
+    this.setState({
+      username: "",
+      password: "",
+      remember: false,
+      login: false,
+    });
+  }
   render() {
     return (
       <div>
@@ -33,7 +42,7 @@ export class Login extends Component {
           id="username"
           value={this.state.username}
           onChange={this.control}
-        />{" "}
+        />
         <br />
         <label htmlFor="password">Password: </label>
         <input
@@ -49,15 +58,16 @@ export class Login extends Component {
           name="remember"
           type="checkbox"
           id="remember"
-          value={this.state.remember}
+          checked={this.state.remember} onClick={this.control}
         />
         <button
           type="button"
           disabled={!this.state.username || !this.state.password}
-          onClick={this.labelIn}
+          onClick={this.labelIn} 
         >
           Login
         </button>
+        <button type="button" onClick={this.restart}>Reset</button>
       </div>
     );
   }
