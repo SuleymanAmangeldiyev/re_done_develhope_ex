@@ -2,33 +2,39 @@ import React, { Component } from 'react'
 
 export class TodoList extends Component {
   constructor(props) {
-    super(props)
-  
+    super(props);
+
     this.state = {
-       lists: '',
-       todos: ['Works']
-    }
+      lists: "",
+      todos: ["Works"],
+    };
   }
-  writing = (e) =>{
+  writing = (e) => {
     this.setState({
-      lists: e.target.value
-    })
-  }
-  
+      lists: e.target.value,
+    });
+  };
+
   add = () => {
     this.setState({
       todos: [...this.state.todos, this.state.lists],
-      lists: ''
-    })
-    
-
-  }
+      lists: "",
+    });
+  };
+  reset = () => {
+    this.setState({
+      todos: ["Works"],
+    });
+  };
   render() {
     return (
       <div>
         <input type="text" onChange={this.writing} value={this.state.lists} />
         <button type="button" onClick={this.add}>
           add
+        </button>
+        <button type="button" onClick={this.reset}>
+          reset
         </button>
         <ul>
           {this.state.todos.map((item) => (
