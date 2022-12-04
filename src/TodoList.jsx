@@ -17,7 +17,8 @@ export class TodoList extends Component {
   
   add = () => {
     this.setState({
-      todos: [...this.state.todos, this.state.lists]
+      todos: [...this.state.todos, this.state.lists],
+      lists: ''
     })
     
 
