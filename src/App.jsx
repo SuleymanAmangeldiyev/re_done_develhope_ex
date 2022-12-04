@@ -12,6 +12,6 @@ export class App extends Component {
 
 export default App;
 
-// the ex: 34  (Lists - 05)
+// the ex: 35  (Lists - 06)
 
-// Modify the TodoList by adding a "reset" button that clears the items array when clicked.
+// Modify the TodoList by adding a "remove" button to each li tag. When clicked, the event handler should remove corresponding item from the items array.
