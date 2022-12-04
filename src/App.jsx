@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Welcome from "./Welcome";
+import Login from "./Login";
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <Welcome/>
+        <Login />
       </div>
     );
   }
@@ -13,7 +13,6 @@ export class App extends Component {
 
 export default App;
 
-// the ex: 36  (Styling Components - 01)
+// the ex: 37  (Styling Components - 03)
 
-// Create an index.css file and import it within the index.js file. Add a .welcome class to the Welcome component that changes its background color and adds a border.
-
+// Modify the Login component from Forms 03 so that the "login" button background color is "red" when the inputted password's length is shorter than 8 characters, green otherwise.

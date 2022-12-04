@@ -42,6 +42,7 @@ export class Login extends Component {
           type="password"
           id="password"
           value={this.state.password}
+          className={this.state.password.length < 8 ? "red" : "green"}
           onChange={this.control}
         />{" "}
         <br />
