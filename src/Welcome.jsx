@@ -1,7 +1,7 @@
 function Welcome({ name }) {
   return (
     <>
-      <p> Welcome, {name}!</p>
+      <p className="welcome"> Welcome, {name}!</p>
     </>
   );
 }
