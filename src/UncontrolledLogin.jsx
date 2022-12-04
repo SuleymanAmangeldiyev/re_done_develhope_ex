@@ -8,13 +8,17 @@ class UncontrolledLogin extends Component {
     this.password = React.createRef();
     this.remember = React.createRef();
   }
-
   submits = (e) => {
     e.preventDefault();
     console.log(this.username.current.value);
     console.log(this.password.current.value);
     console.log(this.remember.current.checked);
   };
+
+  componentDidMount() {
+    this.username.current.focus();
+  }
+
   render() {
     return (
       <form onSubmit={this.submits}>

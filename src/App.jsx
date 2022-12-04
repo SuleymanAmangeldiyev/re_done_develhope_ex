@@ -12,6 +12,6 @@ export class App extends Component {
 
 export default App;
 
-// the ex: 30  (Form - 05)
+// the ex: 31  (Form - 06)
 
-//Implement an UncontrolledLogin component that implements all the operations of the Login component, but does so using uncontrolled components.
+//Modify the UncontrolledLogin component so that the username input is automatically focused when the component renders the first time.
