@@ -1,14 +1,20 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function ClickCounter() {
-  let [count, setCount] = useState(0);
-  const addingOne = () => {
-    setCount(count + 1);
-  };
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    
+    document.getElementById(
+      "counter"
+    ).innerHTML = `This is from useEffect counter: ${count} times`;
+  },[count]);
+
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={addingOne}>count up</button>
+      <h1 id="counter"></h1>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }

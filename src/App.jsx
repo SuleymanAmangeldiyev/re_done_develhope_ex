@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import FloginUse from "./FloginUse";
+import ClickCounter from "./ClickCounter";
 export class App extends Component {
   render() {
     
 
     return (
       <div>
-        <FloginUse />
+        <ClickCounter />
       </div>
     );
   }
@@ -14,4 +14,5 @@ export class App extends Component {
 
 export default App;
 
-// the ex: (useState - 02)
+// the ex: (useEffect - 01)
+
