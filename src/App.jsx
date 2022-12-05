@@ -1,24 +1,12 @@
 import React, { Component } from "react";
-import TodoList from "./TodoList";
+import { DisplayLanguage } from "./DisplayLanguage";
 export class App extends Component {
   render() {
   
-    const show = (items, callback) => {
-      return (
-        <ul>
-          { items.map((item) => (
-              <li key={item}>
-                {item} <button onClick={() => callback(item)}>Remove</button>
-              </li>
-            ))}
-        </ul>
-      );
-    };
  
     return (
       <div>
-       <TodoList shows={show}/>
-       
+    <DisplayLanguage />       
        
       </div>
     );
@@ -27,6 +15,6 @@ export class App extends Component {
 
 export default App;
 
-// the ex: 40  (Render-Props-01)
+// the ex: 41  (Context - 01)
 
-// Modify the TodoList component so that, instead of rendering the items array within the ul tag, it calls the function passed to its render prop, passing it the items array as a parameter, as well as the function required to delete the item. Pass a render prop to the TodoList component to correctly render and interact with the items array
+// Create a LanguageContext and wrap a DisplayLanguage component within its provider. Add a select tag to the component containing the DisplayLanguage component that allows the user to select the language, and pass it as a value to the Provider.
