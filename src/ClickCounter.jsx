@@ -4,10 +4,15 @@ export default function ClickCounter() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    
-    document.getElementById(
-      "counter"
-    ).innerHTML = `This is from useEffect counter: ${count} times`;
+    setInterval(() => {
+ document.getElementById(
+   "counter"
+ ).innerHTML = `This is from useEffect counter: ${count} times`;
+    }, 2000)
+   
+   
+   return clearInterval();
+   
   },[count]);
 
   return (
