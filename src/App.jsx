@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Sum from "./Sum";
+import ClickCounter from "./ClickCounter";
 export class App extends Component {
   render() {
     
 
     return (
       <div>
-    <Sum  />       
+    <ClickCounter  />       
        
       </div>
     );
@@ -15,4 +15,4 @@ export class App extends Component {
 
 export default App;
 
-// the ex: (Function Components - 03)
+// the ex: (useState - 01)
