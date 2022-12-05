@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import ClickCounter from "./ClickCounter";
+import GitHub from "./GitHub";
 export class App extends Component {
   render() {
     
 
     return (
       <div>
-        <ClickCounter />
+        <GitHub username="SuleymanAmangeldiyev"/>
       </div>
     );
   }
@@ -14,5 +14,5 @@ export class App extends Component {
 
 export default App;
 
-// the ex: (useEffect - 01)
+// the ex: (useEffect - 03)
 
