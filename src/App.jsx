@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { DisplayLanguage } from "./DisplayLanguage";
+import Fwelcome from "./Fwelcome";
 export class App extends Component {
   render() {
   
  
     return (
       <div>
-    <DisplayLanguage />       
+    <Fwelcome name="Suleyman" />       
        
       </div>
     );
@@ -15,6 +15,6 @@ export class App extends Component {
 
 export default App;
 
-// the ex: 42  (Context - 02)
+// the ex: 43  (Function Components - 01)
 
-// Consume the LanguageContext within the DisplayLanguage component by using the context consumer, and show the selected language in an h1 tag.
+//Rewrite the Welcome component to be a function component.
