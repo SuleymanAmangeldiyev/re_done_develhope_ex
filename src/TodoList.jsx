@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-export default function TodoList() {
+export default function TodoList({shows}) {
   const [items, setItems] = useState(["Work"]);
   const todoRef = useRef();
 
@@ -22,6 +22,7 @@ export default function TodoList() {
     });
   };
 
+
   return (
     <div>
       <form onSubmit={formADD}>
@@ -31,15 +32,9 @@ export default function TodoList() {
       </form>
 
       <ul>
-        {
-          items.map((item) => (
-            <li key={item}>
-              {item}
-              <button onClick={() => remove(item)}>
-                Remove
-              </button>
-            </li>
-          ))}
+        
+           {shows(items, remove)}
+        
       </ul>
     </div>
   );
