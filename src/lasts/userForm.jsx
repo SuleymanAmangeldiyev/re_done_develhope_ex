@@ -26,7 +26,7 @@ export default function UserForm(){
  const { data, onChangeEvent } = useChangeEvent();
 
  return (
-   <div className="App">
+   <div>
      <input
        type="text"
        name="username"
