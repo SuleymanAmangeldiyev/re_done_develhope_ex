@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import GitHub from "./GitHub";
+import userCounter from "./lasts/userCounter";
 export class App extends Component {
   render() {
     
 
     return (
       <div>
-        <GitHub username="SuleymanAmangeldiyev"/>
+        <HookCounter />
       </div>
     );
   }
@@ -14,5 +14,24 @@ export class App extends Component {
 
 export default App;
 
-// the ex: (useEffect - 03)
+
+
+
+
+function HookCounter({ initialValue = 0 }) {
+  const { counter, onIncrement, onDecrement, onReset } =
+    userCounter(initialValue);
+    return (
+      <div>
+        <h1>{counter}</h1>
+        <button onClick={onIncrement}>add</button>
+        <button onClick={onDecrement}>sub..</button>
+        <button onClick={onReset}>reset</button>
+      </div>
+    );
+}
+
+
+
+
 
