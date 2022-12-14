@@ -4,14 +4,14 @@ import { useState } from "react";
   const [data, setData] = useState({
     username: "",
     password: "",
-    remember: false,
+   
   });
   function changeHandler(event) {
-    const { name, type, value, checked } = event.target;
+    const { name, type, value} = event.target;
     setData((data) => {
       return {
         ...data,
-        [name]: type === "checkbox" ? checked : value,
+        [name]: type === "checkbox" ? '' : value,
       };
     });
   }
@@ -37,12 +37,6 @@ export default function UserForm(){
        type="password"
        name="password"
        value={data.password}
-       onChange={onChangeEvent}
-     />
-     <input
-       type="checkbox"
-       name="remember"
-       checked={data.remember}
        onChange={onChangeEvent}
      />
    </div>
