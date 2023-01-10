@@ -2,7 +2,7 @@ import React from "react";
 import useGitHub from "./useGithubUser";
 
 export default function GitHubuserList() {
-  const { data, loading, error }  = useGitHub( "SuleymanAmangeldiyev")
+  const { data, loading, error } = useGitHub("SuleymanAmangeldiyev");
   return (
     <div>
       {loading && <h1>Loading...</h1>}
@@ -13,3 +13,4 @@ export default function GitHubuserList() {
     </div>
   );
 }
+  
