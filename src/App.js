@@ -1,9 +1,9 @@
-import GitHubuserList from "./GitHubuserList";
+import CarDetails from "./CarDetails ";
 
 function App() {
   return (
     <div>
-      <GitHubuserList />
+      <CarDetails />
     </div>
   );
 }
