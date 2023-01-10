@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function GitHub({ username }) {
+export default function useGitHub({ username }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -23,13 +23,5 @@ export default function GitHub({ username }) {
       });
   }, [username]);
 
-  return (
-    <div>
-      {loading && <h1>Loading...</h1>}
-      {error && <h1>The username is not found</h1>}
-      {data && <h1>{data.name}</h1>}
-      {data && <h2>{data.bio}</h2>}
-      {data && <img src={data.avatar_url} alt="img" />}
-    </div>
-  );
+  return {data, loading, error}
 }
