@@ -1,9 +1,9 @@
-import CarDetails from "./CarDetails ";
+import { DisplayLanguage } from "./DisplayLanguage";
 
 function App() {
   return (
     <div>
-      <CarDetails />
+      <DisplayLanguage />
     </div>
   );
 }
